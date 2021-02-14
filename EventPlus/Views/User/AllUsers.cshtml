@@ -1,0 +1,69 @@
+﻿
+@model IEnumerable<EventPlus.Models.UserViewModel>
+@{
+    ViewBag.Title = "All Users";
+}
+
+<section class="page-section background-grey" id="login">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 text-center bg-white px-lg-5">
+
+                <h2 class="text-black-50 mt-5">
+                    Users
+                </h2>
+
+                <hr class="divider my-4" />
+                <div class="text-left">
+                    <a class="btn btn-primary" href="CreateUser">Add User</a>
+
+                </div>
+                <br />
+
+                <div class="table-responsive">
+                    <!-- table-striped -->
+                    @if (Model != null)
+                    {
+                        <table class="table table-striped">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Address</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">Gender</th>
+                                    <th scope="col">Date of Birth</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var item in Model)
+                                {
+                                <tr>
+                                    <td>
+                                        @Html.ActionLink(item.Email, "UserDetail", new { userID = item.ID })
+                                    </td>
+                                    <td>@item.First_Name</td>
+                                    <td>@item.Last_Name</td>
+                                    <td>@item.Address</td>
+                                    <td>@item.Phone</td>
+                                    <td>@item.Gender</td>
+                                    <td>@item.DateOfBirth.Year-@item.DateOfBirth.Month-@item.DateOfBirth.Day</td>
+
+                                </tr>
+
+                                }
+
+
+
+                            </tbody>
+                        </table>
+                    }
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

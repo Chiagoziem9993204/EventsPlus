@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-subheading">Elite Event Management!</div>
+        <div class="masthead-heading text-uppercase">Welcom To EventPlus</div>
+
+        @Html.ActionLink("Get Started", Session["UserType"] != null ? "AllEvents" : "SignIn", Session["UserType"] != null ? "Event" : "Home", new { area = "" }, new { @class = "btn btn-primary btn-xl text-uppercase js-scroll-trigger" })
+    </div>
+</header>

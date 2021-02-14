@@ -1,0 +1,46 @@
+﻿@using EventPlus.Models
+@model UserViewModel
+
+@{
+    ViewBag.Title = "Sign Up";
+}
+
+
+    <section class="page-section" id="contact">
+        <div class="container">
+            <br />
+            <br />
+            <br />
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Register</h2>
+                <h3 class="section-subheading text-muted">Sign Up To Your EventPlus Account.</h3>
+
+                <div class="d-flex justify-content-center text-center">
+
+                    @using (Html.BeginForm("SignUp", "Home", FormMethod.Post))
+                    {
+                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control form-group email-input", @placeholder = "Email", @type = "email" });
+                        @Html.TextBoxFor(model => model.Password, new { @class = "form-control form-group password-input", @placeholder = "Password", @type = "password" });
+                        @Html.TextBoxFor(model => model.First_Name, new { @class = "form-control form-group name-input", @placeholder = "First Name" });
+                        @Html.TextBoxFor(model => model.Last_Name, new { @class = "form-control form-group name-input", @placeholder = "Last Name" });
+                        @Html.TextBoxFor(model => model.Address, new { @class = "form-control form-group name-input", @placeholder = "Address" });
+                        @Html.TextBoxFor(model => model.Phone, new { @class = "form-control form-group name-input", @placeholder = "Phone", @type = "tel" })
+                        @Html.DropDownListFor(model => model.Gender, new SelectList(Enum.GetValues(typeof(Gender))), "--Select Gender--", new { @class = "form-control form-group name-input" });
+
+                        @*@Html.TextBoxFor(model => model.Gender, new { @class = "form-control form-group name-input", @placeholder = "Gender" })*@
+                        @Html.TextBoxFor(model => model.DateOfBirth, new { @class = "form-control form-group name-input", @placeholder = "Date of Birth", @type = "date" })
+                        @Html.TextBoxFor(model => model.OrganizationName, new { @class = "form-control form-group name-input", @placeholder = "Organization Name (Optional)" })
+
+
+                        <br>
+
+                        <button class="btn btn-primary form-group login-button">Sign Up</button>
+                        <p class="text-black-50">Already a member? <a href="SignIn" class="text-dark">Login.</a></p>
+                    }
+                </div>
+
+
+                <p class="text-white">Not a member? <a href="SignUp" class="">Register.</a></p>
+            </div>
+        </div>
+    </section>

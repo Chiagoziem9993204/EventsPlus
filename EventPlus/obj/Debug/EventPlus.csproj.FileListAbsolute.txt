@@ -1,166 +1,252 @@
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\EventPlus.dll.config
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\EventPlus.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\EventPlus.pdb
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\csc.exe
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\csc.exe.config
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\csc.rsp
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\csi.exe
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\csi.exe.config
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\csi.rsp
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\Microsoft.Win32.Primitives.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.AppContext.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Console.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Globalization.Calendars.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.IO.Compression.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.IO.Compression.ZipFile.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Net.Http.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Net.Sockets.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Threading.Tasks.Extensions.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.ValueTuple.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Xml.XPath.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\vbc.exe
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\vbc.exe.config
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\vbc.rsp
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\VBCSCompiler.exe
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\Antlr3.Runtime.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\EntityFramework.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\EntityFramework.SqlServer.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\Newtonsoft.Json.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\System.Web.Helpers.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\System.Web.Mvc.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\System.Web.Optimization.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\System.Web.Razor.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\System.Web.WebPages.Deployment.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\System.Web.WebPages.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\System.Web.WebPages.Razor.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\WebGrease.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\EntityFramework.xml
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\EntityFramework.SqlServer.xml
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\System.Web.Helpers.xml
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\System.Web.Mvc.xml
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\System.Web.Optimization.xml
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\System.Web.Razor.xml
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\System.Web.WebPages.xml
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\System.Web.WebPages.Deployment.xml
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\System.Web.WebPages.Razor.xml
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\Newtonsoft.Json.xml
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\Antlr3.Runtime.pdb
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\obj\Debug\EventPlus.csprojAssemblyReference.cache
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\obj\Debug\EventPlus.csproj.CoreCompileInputs.cache
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\obj\Debug\EventPlus.csproj.CopyComplete
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\obj\Debug\EventPlus.dll
-C:\Users\user\Desktop\MVC\EventPlus\EventPlus\obj\Debug\EventPlus.pdb
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\EventPlus.dll.config
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\EventPlus.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\EventPlus.pdb
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\csc.exe
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\csc.exe.config
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\csc.rsp
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\csi.exe
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\csi.exe.config
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\csi.rsp
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\Microsoft.Win32.Primitives.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.AppContext.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Console.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Globalization.Calendars.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.IO.Compression.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.IO.Compression.ZipFile.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Net.Http.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Net.Sockets.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Threading.Tasks.Extensions.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.ValueTuple.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Xml.XPath.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\vbc.exe
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\vbc.exe.config
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\vbc.rsp
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\VBCSCompiler.exe
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\Antlr3.Runtime.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\EntityFramework.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\EntityFramework.SqlServer.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\Newtonsoft.Json.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\System.Web.Helpers.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\System.Web.Mvc.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\System.Web.Optimization.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\System.Web.Razor.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\System.Web.WebPages.Deployment.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\System.Web.WebPages.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\System.Web.WebPages.Razor.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\WebGrease.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\EntityFramework.xml
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\EntityFramework.SqlServer.xml
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\System.Web.Helpers.xml
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\System.Web.Mvc.xml
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\System.Web.Optimization.xml
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\System.Web.Razor.xml
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\System.Web.WebPages.xml
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\System.Web.WebPages.Deployment.xml
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\System.Web.WebPages.Razor.xml
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\Newtonsoft.Json.xml
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\Antlr3.Runtime.pdb
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\obj\Debug\EventPlus.csprojAssemblyReference.cache
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\obj\Debug\EventPlus.csproj.CoreCompileInputs.cache
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\obj\Debug\EventPlus.csproj.CopyComplete
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\obj\Debug\EventPlus.dll
-C:\Users\user\Desktop\MVC\EventPlus - Winner\EventPlus\obj\Debug\EventPlus.pdb
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/EventPlus.dll.config
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/EventPlus.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/EventPlus.pdb
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/csc.exe
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/csc.exe.config
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/csc.rsp
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/csi.exe
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/csi.exe.config
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/csi.rsp
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/Microsoft.CSharp.Core.targets
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/Microsoft.Managed.Core.targets
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/Microsoft.VisualBasic.Core.targets
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/Microsoft.Win32.Primitives.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.AppContext.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Collections.Immutable.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Console.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Diagnostics.DiagnosticSource.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Diagnostics.FileVersionInfo.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Diagnostics.StackTrace.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Globalization.Calendars.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.IO.Compression.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.IO.Compression.ZipFile.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.IO.FileSystem.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.IO.FileSystem.Primitives.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Net.Http.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Net.Sockets.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Reflection.Metadata.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Security.Cryptography.Algorithms.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Security.Cryptography.Encoding.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Security.Cryptography.Primitives.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Security.Cryptography.X509Certificates.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Text.Encoding.CodePages.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Threading.Tasks.Extensions.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.ValueTuple.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Xml.ReaderWriter.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Xml.XmlDocument.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Xml.XPath.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/System.Xml.XPath.XDocument.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/vbc.exe
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/vbc.exe.config
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/vbc.rsp
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/VBCSCompiler.exe
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/roslyn/VBCSCompiler.exe.config
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/Antlr3.Runtime.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/EntityFramework.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/EntityFramework.SqlServer.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/Microsoft.Web.Infrastructure.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/Newtonsoft.Json.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/System.Web.Helpers.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/System.Web.Mvc.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/System.Web.Optimization.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/System.Web.Razor.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/System.Web.WebPages.Deployment.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/System.Web.WebPages.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/System.Web.WebPages.Razor.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/WebGrease.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/EntityFramework.xml
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/EntityFramework.SqlServer.xml
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/System.Web.Helpers.xml
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/System.Web.Mvc.xml
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/System.Web.Optimization.xml
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/System.Web.Razor.xml
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/System.Web.WebPages.xml
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/System.Web.WebPages.Deployment.xml
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/System.Web.WebPages.Razor.xml
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/Newtonsoft.Json.xml
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/Antlr3.Runtime.pdb
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/obj/Debug/EventPlus.csprojAssemblyReference.cache
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/obj/Debug/EventPlus.csproj.CoreCompileInputs.cache
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/obj/Debug/EventPlus.csproj.CopyComplete
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/obj/Debug/EventPlus.dll
+C:/Users/user/Desktop/MVC/EventPlus/EventPlus/obj/Debug/EventPlus.pdb
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/EventPlus.dll.config
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/EventPlus.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/EventPlus.pdb
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/csc.exe
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/csc.exe.config
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/csc.rsp
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/csi.exe
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/csi.exe.config
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/csi.rsp
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/Microsoft.CSharp.Core.targets
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/Microsoft.Managed.Core.targets
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/Microsoft.VisualBasic.Core.targets
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/Microsoft.Win32.Primitives.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.AppContext.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Collections.Immutable.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Console.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Diagnostics.DiagnosticSource.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Diagnostics.FileVersionInfo.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Diagnostics.StackTrace.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Globalization.Calendars.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.IO.Compression.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.IO.Compression.ZipFile.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.IO.FileSystem.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.IO.FileSystem.Primitives.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Net.Http.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Net.Sockets.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Reflection.Metadata.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Security.Cryptography.Algorithms.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Security.Cryptography.Encoding.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Security.Cryptography.Primitives.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Security.Cryptography.X509Certificates.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Text.Encoding.CodePages.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Threading.Tasks.Extensions.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.ValueTuple.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Xml.ReaderWriter.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Xml.XmlDocument.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Xml.XPath.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/System.Xml.XPath.XDocument.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/vbc.exe
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/vbc.exe.config
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/vbc.rsp
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/VBCSCompiler.exe
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/roslyn/VBCSCompiler.exe.config
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/Antlr3.Runtime.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/EntityFramework.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/EntityFramework.SqlServer.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/Microsoft.Web.Infrastructure.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/Newtonsoft.Json.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/System.Web.Helpers.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/System.Web.Mvc.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/System.Web.Optimization.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/System.Web.Razor.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/System.Web.WebPages.Deployment.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/System.Web.WebPages.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/System.Web.WebPages.Razor.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/WebGrease.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/EntityFramework.xml
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/EntityFramework.SqlServer.xml
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/System.Web.Helpers.xml
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/System.Web.Mvc.xml
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/System.Web.Optimization.xml
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/System.Web.Razor.xml
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/System.Web.WebPages.xml
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/System.Web.WebPages.Deployment.xml
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/System.Web.WebPages.Razor.xml
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/Newtonsoft.Json.xml
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/Antlr3.Runtime.pdb
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/obj/Debug/EventPlus.csprojAssemblyReference.cache
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/obj/Debug/EventPlus.csproj.CoreCompileInputs.cache
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/obj/Debug/EventPlus.csproj.CopyComplete
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/obj/Debug/EventPlus.dll
+C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/obj/Debug/EventPlus.pdb
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/EventPlus.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/EventPlus.pdb
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/csc.exe
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/csc.exe.config
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/csc.rsp
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/csi.exe
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/csi.exe.config
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/csi.rsp
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/Microsoft.CSharp.Core.targets
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/Microsoft.Managed.Core.targets
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/Microsoft.VisualBasic.Core.targets
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/Microsoft.Win32.Primitives.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.AppContext.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Buffers.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Collections.Immutable.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Console.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Diagnostics.DiagnosticSource.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Diagnostics.FileVersionInfo.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Diagnostics.StackTrace.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Globalization.Calendars.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.IO.Compression.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.IO.Compression.ZipFile.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.IO.FileSystem.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.IO.FileSystem.Primitives.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Memory.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Net.Http.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Net.Sockets.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Numerics.Vectors.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Reflection.Metadata.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Runtime.CompilerServices.Unsafe.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Security.Cryptography.Algorithms.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Security.Cryptography.Encoding.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Security.Cryptography.Primitives.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Security.Cryptography.X509Certificates.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Text.Encoding.CodePages.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Threading.Tasks.Extensions.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.ValueTuple.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Xml.ReaderWriter.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Xml.XmlDocument.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Xml.XPath.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/System.Xml.XPath.XDocument.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/vbc.exe
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/vbc.exe.config
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/vbc.rsp
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/VBCSCompiler.exe
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/roslyn/VBCSCompiler.exe.config
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/Antlr3.Runtime.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/EntityFramework.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/EntityFramework.SqlServer.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/Microsoft.Web.Infrastructure.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/Newtonsoft.Json.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/System.Web.Helpers.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/System.Web.Mvc.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/System.Web.Optimization.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/System.Web.Razor.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/System.Web.WebPages.Deployment.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/System.Web.WebPages.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/System.Web.WebPages.Razor.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/WebGrease.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/System.Web.Helpers.xml
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/System.Web.Mvc.xml
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/System.Web.Optimization.xml
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/System.Web.Razor.xml
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/System.Web.WebPages.xml
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/System.Web.WebPages.Deployment.xml
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/System.Web.WebPages.Razor.xml
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/Newtonsoft.Json.xml
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/Antlr3.Runtime.pdb
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/EntityFramework.xml
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/EntityFramework.SqlServer.xml
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/obj/Debug/EventPlus.csprojAssemblyReference.cache
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/obj/Debug/EventPlus.csproj.CoreCompileInputs.cache
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/obj/Debug/EventPlus.csproj.CopyComplete
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/obj/Debug/EventPlus.dll
+/Users/Jabguru/Desktop/EventsPlus/EventPlus/obj/Debug/EventPlus.pdb

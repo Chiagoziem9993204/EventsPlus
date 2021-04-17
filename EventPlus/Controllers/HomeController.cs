@@ -9,11 +9,16 @@ namespace EventPlus.Controllers
 {
     public class HomeController : Controller
     {
+
+        // ACTION FOR HOME PAGE
         public ActionResult Index()
         {
             return View();
         }
 
+
+        // ACTION FOR LOGOUT
+        // WHEN A USER LOGS OUT, THIS CLEARS THE SESSION (REMOVES SAVED VARIABLES, USERTYPE, AND IDS) AND THEN REDIRECTS TO HOME PAGE
         public ActionResult Logout()
         {
 
@@ -22,13 +27,17 @@ namespace EventPlus.Controllers
             return RedirectToAction("Index");
         }
 
-
+        // ACTION FOR SIGN IN
         public ActionResult SignIn()
         {
 
             return View();
         }
 
+
+        // THIS HANDLES WHEN A USER FILLS THE SIGN IN FORM ON THE SIGN IN PAGE
+        // IT USES THE POST METHOD ON THE FORM
+        // ADMIN CAN LOG IN WITH THE CUSTOM CREDENTIALS PROVIDED BELOW (EMAIL => Admin, PASSWORD = Administrator123)
 
         [HttpPost]
         public ActionResult SignIn(UserViewModel userViewModel)
@@ -66,6 +75,7 @@ namespace EventPlus.Controllers
             return View();
         }
 
+        // ACTION FOR SIGN UP
         public ActionResult SignUp()
         {
 
@@ -73,7 +83,9 @@ namespace EventPlus.Controllers
         }
 
         
-
+        // ACTION FOR SIGN UP (POST METHOD)
+        // THIS HANDLES WHEN A USER FILLS THE REGISTRATION FORM
+        // IT SAVES THE USER TO THE DATABASE AND REDIRECTS TO THE EVENTS PAGE
         [HttpPost]
         public ActionResult SignUp(UserViewModel userViewModel)
         {

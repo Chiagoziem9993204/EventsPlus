@@ -9,13 +9,12 @@ namespace EventPlus.Controllers
 {
     public class UserController : Controller
     {
-        // GET: User
-        public ActionResult Index()
-        {
-            return View();
-        }
+    
 
-
+        // ACTION FOR ALL USERS
+        // IT GETS THE USERS FROM THE DATABASE VIA THE ENTITY MODEL
+        // AND THEN IT IS PARSED AS A LIST OF USERVIEW MODEL TO THE VIEW
+        // THERE IS A CHECK TO MAKE SURE THE USER HASN'T BEEN DELETED BY THE ADMIN
         public ActionResult AllUsers()
         {
             EventPlusEntities db = new EventPlusEntities();
@@ -38,6 +37,11 @@ namespace EventPlus.Controllers
             return View(userViewModelsList);
         }
 
+
+        // ACTION FOR USER DETAIL
+        // IT TAKES IN A SINGLE USER ID
+        // GETS THE DETAILS OF THAT PARTICULAR USER FROM THE DB
+        // DESERIALIZES WITH THE USERVIEW MODEL AND PARSED TO THE VIEW
         public ActionResult UserDetail(int userID)
         {
             EventPlusEntities db = new EventPlusEntities();
@@ -63,6 +67,10 @@ namespace EventPlus.Controllers
         }
 
 
+        // ACTION FOR USER DETAIL (POST METHOD)
+        // THIS IS USED BY THE ADMIN TO UPDATE A PARTICULAR USER
+        // IT TAKES IN THE UPDATED USERVIEWMODEL FROM THE FORM
+        // AND IT REDIRECTS TO ALL USERS VIEW
         [HttpPost]
         public ActionResult UserDetail(UserViewModel userViewModel)
         {
@@ -96,6 +104,10 @@ namespace EventPlus.Controllers
             return RedirectToAction("AllUsers");
         }
 
+        // ACTION FOR DELETE USER
+        // TAKES IN A SINGLE USER ID
+        // GETS THE USER IN THE DATABASE AND THEN DELETES (UPDATE THE DETELED ROW)
+        // THEN REDIRECTS TO ALL USERS PAGE
         public ActionResult DeleteUser(int userID)
         {
             EventPlusEntities db = new EventPlusEntities();
@@ -108,6 +120,7 @@ namespace EventPlus.Controllers
 
         }
 
+        // ACTION FOR CREATE USER
         public ActionResult CreateUser()
         {
 
@@ -115,6 +128,13 @@ namespace EventPlus.Controllers
         }
 
 
+        // ACTION FOR CREATE USER (POST METHOD)
+        // TAKES IN USERVIEWMODEL FROM THE FORM
+        // STORES THE USER TO THE DATABASE
+        // AND REDIRECTS TO ALL USERS SCREEN
+        // ATTENDEES AND ORGANIZATIONS/ORGANIZERS ARE DIFFERENTIATED BY THE ORGANIZATION NAME FIELD
+        // IF A USER FILLS THIS FIELD, THEN HE/SHE IS AN ORGANIZATION WHICH CREATES A CORRESPONDING ORGANIZATION FOR THE USER IN THE DATABASE
+        // ELSE THE USER IS AN ATTENDEE WHICH CREATES AN ATTENDEE IN THE DATABASE FOR THE USER
         [HttpPost]
         public ActionResult CreateUser(UserViewModel userViewModel)
         {

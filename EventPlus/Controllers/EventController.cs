@@ -10,13 +10,9 @@ namespace EventPlus.Controllers
     public class EventController : Controller
     {
 
-        // GET: Event
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-
+        // ACTION FOR CREATE EVENT
+        // IT GETS ALL USERS THAT HASN'T BEEN DELETED FROM THE DATABASE
+        // IT IS PASSED TO THE VIEW
         public ActionResult CreateEvent()
         {
 
@@ -26,6 +22,12 @@ namespace EventPlus.Controllers
             return View();
         }
 
+
+        // ACTION FOR CREATE EVENT (POST METHOD)
+        // IT IS USED BY ORGANIZERS AND ADMINS TO CREATE EVENTS
+        // EVENT IS SAVED TO THE DATABASE
+        // A CORRESPONDING TICKET ROW IS CREATED IN THE DATABASE FOR THE EVENT
+        // HE/SHE IS THEN REDIRECTED TO ALL EVENTS PAGE
         [HttpPost]
         public ActionResult CreateEvent(EventViewModel eventViewModel)
         {
@@ -78,6 +80,10 @@ namespace EventPlus.Controllers
             return RedirectToAction("AllEvents");
         }
 
+
+        // ACTION FOR ALL EVENTS
+        // GETS ALL THE EVENTS FROM THE DATABASE
+        // EVENTS ARE DESERIALIZED USING THE EVENTVIEWMODEL AND SENT TO THE VIEW
         public ActionResult AllEvents()
         {
             EventPlusEntities db = new EventPlusEntities();
@@ -87,6 +93,12 @@ namespace EventPlus.Controllers
             return View(eventViewModelsList);
         }
 
+
+        // ACTION FOR EVENT DETAIL
+        // TAKES IN SINGLE EVENT ID
+        // GETS THE EVENT FROM THE DATABASE
+        // DESERIALIZES THE EVENT WITH THE EVENTVIEWMODEL AND
+        // SENDS THE EVENT TO THE VIEW TO BE DISPLAYED
 
         public ActionResult EventDetail(int eventID)
         {
@@ -113,6 +125,13 @@ namespace EventPlus.Controllers
             return View(eventViewModel);
         }
 
+
+        // ACTION FOR EVENT DETAIL (POST METHOD)
+        // USED BY ADMIN AND ORGANIZER TO UPDATE AN EVENT
+        // TAKES IN EVENTVIEWMODEL FROM THE FORM
+        // UPDATES THE EVENT IN THE DATABASE
+        // UPDATES THE CORRESPONDING EVENT TICKET TOO
+        // REDIRECTS TO ALL EVENTS PAGE
         [HttpPost]
         public ActionResult EventDetail(EventViewModel eventViewModel)
         {
@@ -154,6 +173,12 @@ namespace EventPlus.Controllers
             return RedirectToAction("AllEvents");
         }
 
+
+        // ACTION FOR DELETE EVENT
+        // EVENTS CAN OLY BE DELETED BY THE ORGANIZER OF THE EVENT AND THE ADMIN
+        // TAKES IN THE EVENT ID
+        // GETS THE EVENT IN THE DB AND DELETES IT (UPDATES THE DELETED FIELD)
+        // REDIRECTS TO ALL EVENTS PAGE
         public ActionResult DeleteEvent(int eventID)
         {
             EventPlusEntities db = new EventPlusEntities();
@@ -168,6 +193,11 @@ namespace EventPlus.Controllers
         }
 
 
+        // ACTION FOR PAY EVENT
+        // TAKES IN THE EVENT ID
+        // GETS THE TICKET FOR THE EVENT
+        // CREATES A PAYMENT ROW IN THE DATABASE FOR THE TICKET OF THE EVENT
+        // REDIRECTS TO ALL EVENTS PAGE
         public ActionResult PayForEvent(int eventID)
         {
             EventPlusEntities db = new EventPlusEntities();

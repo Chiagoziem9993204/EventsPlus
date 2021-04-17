@@ -17,14 +17,14 @@
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="TicketQuantity" Type="Int32" Nullable="false" />
-    <Property Name="ScheduledDateTime" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="IsRecurring" Type="Int32" Nullable="false" />
-    <Property Name="Location" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NoOfTickets" Type="Int32" Nullable="false" />
+    <Property Name="DateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Recurring" Type="Int32" Nullable="false" />
+    <Property Name="Venue" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="OrganizationID" Type="Int32" Nullable="false" />
-    <Property Name="IsDeleted" Type="Int32" Nullable="false" />
+    <Property Name="Deleted" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Organization" Relationship="Self.FK_Event_Organization" FromRole="Event" ToRole="Organization" />
     <NavigationProperty Name="Tickets" Relationship="Self.FK_Ticket_Event" FromRole="Event" ToRole="Ticket" />
   </EntityType>
@@ -67,13 +67,13 @@
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="First_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Last_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Gender" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="IsDeleted" Type="Int32" Nullable="false" />
+    <Property Name="Deleted" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Attendees" Relationship="Self.FK_Attendee_User" FromRole="User" ToRole="Attendee" />
     <NavigationProperty Name="Organizations" Relationship="Self.FK_Organization_User" FromRole="User" ToRole="Organization" />
   </EntityType>

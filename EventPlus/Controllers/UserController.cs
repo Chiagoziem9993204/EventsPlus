@@ -21,13 +21,13 @@ namespace EventPlus.Controllers
             EventPlusEntities db = new EventPlusEntities();
             List<User> usersList = db.Users.ToList();
             UserViewModel userViewModel = new UserViewModel();
-            List<UserViewModel> userViewModelsList = usersList.Where(x=>x.IsDeleted==0).Select(
+            List<UserViewModel> userViewModelsList = usersList.Where(x=>x.Deleted==0).Select(
                 x=> new UserViewModel {
                 ID=x.ID,
                 Email=x.Email,
                 Password=x.Password,
-                First_Name=x.First_Name,
-                Last_Name=x.Last_Name,
+                FName=x.FName,
+                LName=x.LName,
                 Address=x.Address,
                 Phone=x.Phone,
                 Gender=userViewModel.SetUserGenderValue(x.Gender),
@@ -46,8 +46,8 @@ namespace EventPlus.Controllers
 
             userViewModel.ID = singleUser.ID;
             userViewModel.Email = singleUser.Email;
-            userViewModel.First_Name = singleUser.First_Name;
-            userViewModel.Last_Name = singleUser.Last_Name;
+            userViewModel.FName = singleUser.FName;
+            userViewModel.LName = singleUser.LName;
             userViewModel.Address = singleUser.Address;
             userViewModel.Phone = singleUser.Phone;
             userViewModel.Gender = userViewModel.SetUserGenderValue( singleUser.Gender);
@@ -76,8 +76,8 @@ namespace EventPlus.Controllers
                 user.Email = userViewModel.Email;
             }
            
-            user.First_Name = userViewModel.First_Name;
-            user.Last_Name = userViewModel.Last_Name;
+            user.FName = userViewModel.FName;
+            user.LName = userViewModel.LName;
             user.Address = userViewModel.Address;
             user.Phone = userViewModel.Phone;
             user.Gender = userViewModel.GetUserGenderValue(userViewModel.Gender);
@@ -101,7 +101,7 @@ namespace EventPlus.Controllers
             EventPlusEntities db = new EventPlusEntities();
 
             User user = db.Users.SingleOrDefault(x => x.ID == userID);
-            user.IsDeleted = 1;
+            user.Deleted = 1;
             db.SaveChanges();
 
             return RedirectToAction("AllUsers");
@@ -123,13 +123,13 @@ namespace EventPlus.Controllers
                 EventPlusEntities db = new EventPlusEntities();
                 User user = new User();
 
-                user.First_Name = userViewModel.First_Name;
-                user.Last_Name = userViewModel.Last_Name;
+                user.FName = userViewModel.FName;
+                user.LName = userViewModel.LName;
                 user.Email = userViewModel.Email;
                 user.Password = userViewModel.Password;
                 user.Address = userViewModel.Address;
                 user.Phone = userViewModel.Phone;
-                user.IsDeleted = 0;
+                user.Deleted = 0;
                 if (userViewModel.Gender == Gender.Female)
                 {
                     user.Gender = "Female";

@@ -3,82 +3,96 @@
 @model UserViewModel
 
 @{
-    ViewBag.Title = Model.First_Name;
+    ViewBag.Title = Model.FName;
 }
 
-<section class="page-section background-grey" id="login">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-12 text-center bg-white px-lg-5">
-                <h2 class="text-black-50 mt-5">Event Detail</h2>
-                <hr class="divider my-4" />
-                <div class="px-lg-5">
+    <div class="container box">
+        <section class="about-us" id="about">
+            <div class="container w-60">
+                <div class="row">
+                    <div class="text-center mt-100 mb-100">
+                        <h2 class="text-black-50 mt-5">User Detail</h2>
+                        <hr class="divider my-4" />
+                        <div class="px-lg-5">
 
-                    @if (Model != null)
-                    {
-
-                        using (Html.BeginForm("UserDetail", "User", FormMethod.Post))
-                        {
-
-                            @Html.HiddenFor(model => model.ID)
-
-                            <p class="text-left">Email</p>
-                            @Html.TextBoxFor(model => model.Email, new { @class = "form-control form-group name-input", @placeholder = "Email" })
-                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "error", })
-                            <br />
-
-                            <p class="text-left">First Name</p>
-                            @Html.TextBoxFor(model => model.First_Name, new { @class = "form-control form-group name-input", @placeholder = "First Name" })
-                            @Html.ValidationMessageFor(model => model.First_Name, "", new { @class = "error", })
-                            <br />
-
-                            <p class="text-left">Last Name</p>
-                            @Html.TextBoxFor(model => model.Last_Name, new { @class = "form-control form-group name-input", @placeholder = "Last Name" })
-                            @Html.ValidationMessageFor(model => model.Last_Name, "", new { @class = "error", })
-                            <br />
-
-                            <p class="text-left">Address</p>
-                            @Html.TextBoxFor(model => model.Address, new { @class = "form-control form-group name-input", @placeholder = "Address" })
-                            @Html.ValidationMessageFor(model => model.Address, "", new { @class = "error", })
-                            <br />
-
-                            <p class="text-left">Phone</p>
-                            @Html.TextBoxFor(model => model.Phone, new { @class = "form-control form-group name-input", @placeholder = "Phone" })
-                            @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "error", })
-                            <br />
-
-                            <p class="text-left">Gender</p>
-                            @Html.DropDownListFor(model => model.Gender, new SelectList(Enum.GetValues(typeof(Gender))), "--Gender--", new { @class = "form-control form-group name-input" });
-
-                            @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "error", })
-
-                            <br />
-
-                            <p class="text-left">Date Of Birth</p>
-                            @Html.TextBoxFor(model => model.DateOfBirth, new { @class = "form-control form-group name-input", @placeholder = "Date Of Birth", @type = "date", @value = Model.DateOfBirth })
-                            @Html.ValidationMessageFor(model => model.DateOfBirth, "", new { @class = "error", })
-                            <br />
-
-                            if (Model.OrganizationName != null && Model.OrganizationName != "")
+                            @if (Model != null)
                             {
-                                <p class="text-left">Organization Name</p>
-                                @Html.TextBoxFor(model => model.OrganizationName, new { @class = "form-control form-group name-input", @placeholder = "Organization Name" })
-                                <br>
+
+                                using (Html.BeginForm("UserDetail", "User", FormMethod.Post))
+                                {
+
+                                    @Html.HiddenFor(model => model.ID)
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="text-left">First Name</p>
+                                            @Html.TextBoxFor(model => model.FName, new { @class = "form-control form-group name-input", @placeholder = "First Name" })
+                                            @Html.ValidationMessageFor(model => model.FName, "", new { @class = "error", })
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="text-left">Last Name</p>
+                                            @Html.TextBoxFor(model => model.LName, new { @class = "form-control form-group name-input", @placeholder = "Last Name" })
+                                            @Html.ValidationMessageFor(model => model.LName, "", new { @class = "error", })
+                                        </div>
+                                    </div>
+                                    <br />
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="text-left">Email</p>
+                                            @Html.TextBoxFor(model => model.Email, new { @class = "form-control form-group name-input", @placeholder = "Email" })
+                                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "error", })
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="text-left">Address</p>
+                                            @Html.TextBoxFor(model => model.Address, new { @class = "form-control form-group name-input", @placeholder = "Address" })
+                                            @Html.ValidationMessageFor(model => model.Address, "", new { @class = "error", })
+                                        </div>
+                                    </div>
+
+                                    <br />
+
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="text-left">Phone</p>
+                                            @Html.TextBoxFor(model => model.Phone, new { @class = "form-control form-group name-input", @placeholder = "Phone" })
+                                            @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "error", })
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="text-left">Gender</p>
+                                            @Html.DropDownListFor(model => model.Gender, new SelectList(Enum.GetValues(typeof(Gender))), "--Gender--", new { @class = "form-control form-group name-input" })
+                                            @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "error", })
+                                        </div>
+                                    </div>
+
+                                    <br />
+
+                                    <p class="text-left">Date Of Birth</p>
+                                    @Html.TextBoxFor(model => model.DateOfBirth, new { @class = "form-control form-group name-input", @placeholder = "Date Of Birth", @type = "date", @value = Model.DateOfBirth })
+                                    @Html.ValidationMessageFor(model => model.DateOfBirth, "", new { @class = "error", })
+                                    <br />
+
+                                    if (Model.OrganizationName != null && Model.OrganizationName != "")
+                                    {
+                                        <p class="text-left">Organization Name</p>
+                                        @Html.TextBoxFor(model => model.OrganizationName, new { @class = "form-control form-group name-input", @placeholder = "Organization Name" })
+                                        <br>
+                                    }
+
+                                    <input type="submit" value="Update" class="btn btn-block btn-primary form-group login-button" />
+
+                                }
+
+
+                                @Html.ActionLink("Delete", "DeleteUser", new { userID = Model.ID }, new { @class = "btn btn-block btn-danger form-group login-button" })
+
+                                <br />
                             }
 
-                            <input type="submit" value="Update" class="btn btn-block btn-primary form-group login-button" />
+                        </div>
 
-                        }
-
-
-                        @Html.ActionLink("Delete", "DeleteUser", new { userID = Model.ID }, new { @class = "btn btn-block btn-danger form-group login-button" })
-
-                        <br />
-                    }
-
+                    </div>
                 </div>
-
             </div>
+        </section>
         </div>
-    </div>
-</section>

@@ -10,38 +10,38 @@ namespace EventPlus.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }
-        public int TicketQuantity { get; set; }
-        public System.DateTime ScheduledDateTime { get; set; }
-        public IsRecurring IsRecurring { get; set; }
-        public string Location { get; set; }
+        public int NoOfTickets { get; set; }
+        public System.DateTime DateTime { get; set; }
+        public Recurring Recurring { get; set; }
+        public string Venue { get; set; }
         public string Link { get; set; }
         public string Description { get; set; }
 
-        public int IsDeleted { get; set; }
+        public int Deleted { get; set; }
         public int OrganizationID { get; set; }
 
         public int TicketPrice { get; set; }
 
-        public int GetEventRecurringValue(IsRecurring isRecurring)
+        public int GetEventRecurringValue(Recurring isRecurring)
         {
-            if (isRecurring == IsRecurring.Yes)
+            if (isRecurring == Recurring.Yes)
             {
                 return 1;
             }
             return 0;
         }
 
-        public IsRecurring SetEventRecurringValue(int value)
+        public Recurring SetEventRecurringValue(int value)
         {
             if (value == 1)
             {
-                return IsRecurring.Yes;
+                return Recurring.Yes;
             }
-            return IsRecurring.No;
+            return Recurring.No;
         }
     }
 
-    public enum IsRecurring
+    public enum Recurring
     {
         Yes,
         No

@@ -7,29 +7,56 @@
 }
 
 
-<section class="page-section background-grey" id="login">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 text-center bg-white px-lg-5">
-                <h2 class="text-black-50 mt-5">Create User</h2>
-                <hr class="divider my-4" />
+    <div class="container box">
+        <section class="about-us" id="about">
+            <div class="container w-60">
+                <div class="">
+                    <div class="text-center mt-100">
+                        <h2 class="text-black-50 mt-5">Create User</h2>
+                        <hr class="divider my-4" />
 
-                @using (Html.BeginForm("CreateUser", "User", FormMethod.Post))
-                {
-                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control form-group email-input", @placeholder = "Email", @type = "email" });
-                    @Html.TextBoxFor(model => model.Password, new { @class = "form-control form-group password-input", @placeholder = "Password", @type = "password" });
-                    @Html.TextBoxFor(model => model.First_Name, new { @class = "form-control form-group name-input", @placeholder = "First Name" });
-                    @Html.TextBoxFor(model => model.Last_Name, new { @class = "form-control form-group name-input", @placeholder = "Last Name" });
-                    @Html.TextBoxFor(model => model.Address, new { @class = "form-control form-group name-input", @placeholder = "Address" });
-                    @Html.TextBoxFor(model => model.Phone, new { @class = "form-control form-group name-input", @placeholder = "Phone", @type = "tel" })
-                    @Html.DropDownListFor(model => model.Gender, new SelectList(Enum.GetValues(typeof(Gender))), "--Select Gender--", new { @class = "form-control form-group name-input" });
-                    @Html.TextBoxFor(model => model.DateOfBirth, new { @class = "form-control form-group name-input", @placeholder = "Date of Birth", @type = "date" })
-                    @Html.TextBoxFor(model => model.OrganizationName, new { @class = "form-control form-group name-input", @placeholder = "Organization Name (Optional)" })
-                    <br>
-                    <button class="btn btn-primary form-group login-button">Create</button>
-                }
+                        @using (Html.BeginForm("CreateUser", "User", FormMethod.Post))
+                        {
+                            <div class="row">
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control form-group email-input", @placeholder = "Email", @type = "email" })
+                                </div>
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.Password, new { @class = "form-control form-group password-input", @placeholder = "Password", @type = "password" })
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.FName, new { @class = "form-control form-group name-input", @placeholder = "First Name" })
+                                </div>
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.LName, new { @class = "form-control form-group name-input", @placeholder = "Last Name" })
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.Address, new { @class = "form-control form-group name-input", @placeholder = "Address" })
+                                </div>
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.Phone, new { @class = "form-control form-group name-input", @placeholder = "Phone", @type = "tel" })
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    @Html.DropDownListFor(model => model.Gender, new SelectList(Enum.GetValues(typeof(Gender))), "--Select Gender--", new { @class = "form-control form-group name-input" })
+                                </div>
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.OrganizationName, new { @class = "form-control form-group name-input", @placeholder = "Organization Name (Optional)" })
+                                </div>
+                            </div>
+                            @Html.TextBoxFor(model => model.DateOfBirth, new { @class = "form-control form-group name-input", @placeholder = "Date of Birth", @type = "date" })
+                            <br>
+                            <button class="btn btn-primary form-group login-button">Create</button>
+                        }
+                        <br />
 
+                    </div>
+                </div>
             </div>
+        </section>
         </div>
-    </div>
-</section>

@@ -33,33 +33,33 @@ namespace EventPlus.Controllers
             try
             {
                 EventPlusEntities db = new EventPlusEntities();
-                Event evt = new Event();
+                Event eventEntityModel = new Event();
 
                 List<Organization> list = db.Organizations.ToList();
                 ViewBag.OrganizationList = new SelectList(list, "ID", "Name");
 
-                evt.Name = eventViewModel.Name;
-                evt.Type = eventViewModel.Type;
-                evt.TicketQuantity = eventViewModel.TicketQuantity;
-                evt.ScheduledDateTime = eventViewModel.ScheduledDateTime;
-                evt.IsRecurring =
-                    eventViewModel.GetEventRecurringValue(eventViewModel.IsRecurring);
-                evt.Location = eventViewModel.Location;
-                evt.Link = eventViewModel.Link;
-                evt.Description = eventViewModel.Description;
-                evt.IsDeleted = 0;
-                if (Session["UserType"] == "Admin")
+                eventEntityModel.Name = eventViewModel.Name;
+                eventEntityModel.Type = eventViewModel.Type;
+                eventEntityModel.NoOfTickets = eventViewModel.NoOfTickets;
+                eventEntityModel.DateTime = eventViewModel.DateTime;
+                eventEntityModel.Recurring =
+                    eventViewModel.GetEventRecurringValue(eventViewModel.Recurring);
+                eventEntityModel.Venue = eventViewModel.Venue;
+                eventEntityModel.Link = eventViewModel.Link;
+                eventEntityModel.Description = eventViewModel.Description;
+                eventEntityModel.Deleted = 0;
+                if (Session["LoggedInUserType"] == "Admin")
                 {
-                    evt.OrganizationID = eventViewModel.OrganizationID;
+                    eventEntityModel.OrganizationID = eventViewModel.OrganizationID;
 
                 } else
                 {
-                    evt.OrganizationID = Int32.Parse(Session["OrganizationID"].ToString());
+                    eventEntityModel.OrganizationID = Int32.Parse(Session["OrganizationID"].ToString());
                 }
 
-                db.Events.Add(evt);
+                db.Events.Add(eventEntityModel);
                 db.SaveChanges();
-                int lastestEvtId = evt.ID;
+                int lastestEvtId = eventEntityModel.ID;
 
                 Ticket ticket = new Ticket();
                 ticket.TicketPrice = eventViewModel.TicketPrice;
@@ -83,7 +83,7 @@ namespace EventPlus.Controllers
             EventPlusEntities db = new EventPlusEntities();
             List<Event> eventsList = db.Events.ToList();
             EventViewModel eventViewModel = new EventViewModel();
-            List<EventViewModel> eventViewModelsList = eventsList.Where(x=>x.IsDeleted==0).Select(x => new EventViewModel { ID = x.ID, Name = x.Name, Type = x.Type, TicketQuantity = x.TicketQuantity, ScheduledDateTime = x.ScheduledDateTime, IsRecurring = eventViewModel.SetEventRecurringValue(x.IsRecurring), Location = x.Location, Link = x.Link, Description = x.Description, OrganizationID = x.OrganizationID }).ToList();
+            List<EventViewModel> eventViewModelsList = eventsList.Where(x=>x.Deleted==0).Select(x => new EventViewModel { ID = x.ID, Name = x.Name, Type = x.Type, NoOfTickets = x.NoOfTickets, DateTime = x.DateTime, Recurring = eventViewModel.SetEventRecurringValue(x.Recurring), Venue = x.Venue, Link = x.Link, Description = x.Description, OrganizationID = x.OrganizationID }).ToList();
             return View(eventViewModelsList);
         }
 
@@ -101,10 +101,10 @@ namespace EventPlus.Controllers
             eventViewModel.ID = singleEvent.ID;
             eventViewModel.Name = singleEvent.Name;
             eventViewModel.Type = singleEvent.Type;
-            eventViewModel.TicketQuantity = singleEvent.TicketQuantity;
-            eventViewModel.ScheduledDateTime = singleEvent.ScheduledDateTime;
-            eventViewModel.IsRecurring = eventViewModel.SetEventRecurringValue(singleEvent.IsRecurring);
-            eventViewModel.Location = singleEvent.Location;
+            eventViewModel.NoOfTickets = singleEvent.NoOfTickets;
+            eventViewModel.DateTime = singleEvent.DateTime;
+            eventViewModel.Recurring = eventViewModel.SetEventRecurringValue(singleEvent.Recurring);
+            eventViewModel.Venue = singleEvent.Venue;
             eventViewModel.Link = singleEvent.Link;
             eventViewModel.Description = singleEvent.Description;
             eventViewModel.OrganizationID = singleEvent.OrganizationID;
@@ -118,31 +118,31 @@ namespace EventPlus.Controllers
         {
             EventPlusEntities db = new EventPlusEntities();
 
-            Event evt = db.Events.SingleOrDefault(x => x.ID == eventViewModel.ID);
+            Event eventEntityModel = db.Events.SingleOrDefault(x => x.ID == eventViewModel.ID);
 
             List<Organization> list = db.Organizations.ToList();
             ViewBag.OrganizationList = new SelectList(list, "ID", "Name");
 
-            evt.Name = eventViewModel.Name;
-            evt.Type = eventViewModel.Type;
-            evt.TicketQuantity = eventViewModel.TicketQuantity;
-            if (eventViewModel.ScheduledDateTime.Year != 1)
+            eventEntityModel.Name = eventViewModel.Name;
+            eventEntityModel.Type = eventViewModel.Type;
+            eventEntityModel.NoOfTickets = eventViewModel.NoOfTickets;
+            if (eventViewModel.DateTime.Year != 1)
             {
-                evt.ScheduledDateTime = eventViewModel.ScheduledDateTime;
+                eventEntityModel.DateTime = eventViewModel.DateTime;
             }
 
-            evt.IsRecurring = eventViewModel.GetEventRecurringValue(eventViewModel.IsRecurring);
-            evt.Location = eventViewModel.Location;
-            evt.Link = eventViewModel.Link;
-            evt.Description = eventViewModel.Description;
-            if (Session["UserType"] == "Admin")
+            eventEntityModel.Recurring = eventViewModel.GetEventRecurringValue(eventViewModel.Recurring);
+            eventEntityModel.Venue = eventViewModel.Venue;
+            eventEntityModel.Link = eventViewModel.Link;
+            eventEntityModel.Description = eventViewModel.Description;
+            if (Session["LoggedInUserType"] == "Admin")
             {
-                evt.OrganizationID = eventViewModel.OrganizationID;
+                eventEntityModel.OrganizationID = eventViewModel.OrganizationID;
 
             }
             else
             {
-                evt.OrganizationID = Int32.Parse(Session["OrganizationID"].ToString());
+                eventEntityModel.OrganizationID = Int32.Parse(Session["OrganizationID"].ToString());
             }
             db.SaveChanges();
 
@@ -158,9 +158,9 @@ namespace EventPlus.Controllers
         {
             EventPlusEntities db = new EventPlusEntities();
 
-            Event evt = db.Events.SingleOrDefault(x => x.ID == eventID);
+            Event eventEntityModel = db.Events.SingleOrDefault(x => x.ID == eventID);
 
-            evt.IsDeleted = 1;
+            eventEntityModel.Deleted = 1;
             db.SaveChanges();
 
             return RedirectToAction("AllEvents");

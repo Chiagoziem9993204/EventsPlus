@@ -3,7 +3,13 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="EventPlus" expanded="True" />
+          <Node name="EventPlus" expanded="True">
+            <Node name="EventPlus" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="UserViewModel.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

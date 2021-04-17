@@ -2,124 +2,94 @@
 @{
     ViewBag.Title = "All Events";
 }
+<div class="container box">
+    <section id="schedule" class="row mb-100">
+        <div class="title-start schedule-menu col-md-4 col-md-offset-4 mt-100 mb-100">
+            <br />
+            @if (Session["LoggedInUserType"] == "Organizer")
+            {
+                <h2 class="text-black-50 mt-5">
+                    My Events
+                </h2>
+            }
+            else
+            {
+                <h2 class="text-black-50 mt-5">
+                    Events
+                </h2>
+            }
 
-<section class="page-section background-grey" id="login">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-12 text-center bg-white px-lg-5">
-                @if (Session["UserType"] == "Organizer")
-                {
-                    <h2 class="text-black-50 mt-5">
-                        My Events
-                    </h2>
-                }
-                else
-                {
-                    <h2 class="text-black-50 mt-5">
-                        Events
-                    </h2>
-                }
-
-                <hr class="divider my-4" />
-                @if (Session["UserType"] != null && Session["UserType"] != "Attendee")
-                {
-            <div class="text-left">
-                <a class="btn btn-primary" href="CreateEvent">Add Event</a>
-            </div>
-                }
-
-                <br>
-                <div class="table-responsive">
-                    <!-- table-striped -->
-                    @if (Model != null)
-                    {
-                        <table class="table table-striped">
-                            <thead class="table-primary">
-                                <tr>
-                                    @*<th scope="col">ID</th>
-                            <th scope="col">Organization ID</th>*@
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Type</th>
-                                    <th scope="col">Ticket Quantity</th>
-                                    <th scope="col">Scheduled Date Time</th>
-                                    <th scope="col">Is Recurring</th>
-                                    <th scope="col">Location</th>
-                                    <th scope="col">Link</th>
-                                    <th scope="col">Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                                @foreach (var item in Model)
-                                {
-                                    if (Session["UserType"] == "Organizer")
-                                    {
-                                        if (item.OrganizationID.ToString() == Session["OrganizationID"].ToString())
-                                        {
-                                            <tr>
-                                                @*<th scope="row">@item.ID</th>
-                                        <td>@item.OrganizationID</td>*@
-                                                <td>
-                                                    @Html.ActionLink(item.Name, "EventDetail", new { eventID = item.ID })
-                                                    @*<a href="/Event/EventDetail?eventID=@item.ID">@item.Name</a>*@
-                                                </td>
-                                                <td>@item.Type</td>
-                                                <td>@item.TicketQuantity</td>
-                                                <td>@item.ScheduledDateTime</td>
-                                                @if (item.GetEventRecurringValue(item.IsRecurring) == 1)
-                                                {
-                                                    <td>Yes</td>
-                                                    ;
-                                                }
-                                                else
-                                                {
-                                                    <td>No</td>
-                                                }
-                                                <td>@item.Location</td>
-                                                <td>@item.Link</td>
-                                                <td>@item.Description</td>
-                                            </tr>
-                                        }
-                                    }
-                                    else
-                                    {
-                                        <tr>
-                                            @*<th scope="row">@item.ID</th>
-                                    <td>@item.OrganizationID</td>*@
-                                            <td>
-                                                @Html.ActionLink(item.Name, "EventDetail", new { eventID = item.ID })
-                                                @*<a href="/Event/EventDetail?eventID=@item.ID">@item.Name</a>*@
-                                            </td>
-                                            <td>@item.Type</td>
-                                            <td>@item.TicketQuantity</td>
-                                            <td>@item.ScheduledDateTime</td>
-                                            @if (item.GetEventRecurringValue(item.IsRecurring) == 1)
-                                            {
-                                                <td>Yes</td>
-                                                ;
-                                            }
-                                            else
-                                            {
-                                                <td>No</td>
-                                            }
-                                            <td>@item.Location</td>
-                                            <td>@item.Link</td>
-                                            <td>@item.Description</td>
-                                        </tr>
-                                    }
-
-
-                                }
-
-
-
-                            </tbody>
-                        </table>
-                    }
-
+            <p class="sub-text text-center">Check out the event details</p>
+            <hr class="divider my-4" />
+            @if (Session["LoggedInUserType"] != null && Session["LoggedInUserType"] != "Attendee")
+            {
+                <div class="text-center">
+                    <a class="btn btn-primary" href="CreateEvent">Add Event</a>
                 </div>
-
-            </div>
+            }
         </div>
-    </div>
-</section>
+        <ul class="timeline">
+
+            @if (Model != null)
+            {
+
+                {
+                    int count = 0;
+                    foreach (var item in Model)
+                    {
+
+                        <li class="@(count%2==0?"":"timeline-inverted")">
+
+                            <div class="timeline-badge">
+                                <a><i class="fa fa-circle" id=""></i></a>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4> @Html.ActionLink(item.Name, "EventDetail", new { eventID = item.ID })</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="timeline-desc col-md-6">@item.Description</p>
+                                    <p class="timeline-other col-md-6">
+
+                                        <em class="timeline-item">
+                                            Venue : @item.Venue
+                                        </em>
+                                        <em class="timeline-item">
+                                            Type : @item.Type
+                                        </em>
+                                        <em class="timeline-item">
+                                            Ticket: @item.NoOfTickets
+                                        </em>
+                                        <em class="timeline-item">
+                                            Date & Time : @item.DateTime
+                                        </em>
+
+                                        @if (item.GetEventRecurringValue(item.Recurring) == 1)
+                                        {
+                                            <em class="timeline-item">
+                                                Recurring : Yes
+                                            </em>
+                                        }
+                                        else
+                                        {
+                                            <em class="timeline-item">
+                                                Recurring : No
+                                            </em>
+                                        }
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        count = count + 1;
+                    }
+                }
+                <li class="clearfix no-float"></li>
+            }
+        </ul>
+
+    </section>
+</div>

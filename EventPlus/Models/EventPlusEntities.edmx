@@ -20,14 +20,14 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
           <Property Name="Type" Type="nvarchar" MaxLength="255" Nullable="false" />
-          <Property Name="TicketQuantity" Type="int" Nullable="false" />
-          <Property Name="ScheduledDateTime" Type="datetime" Nullable="false" />
-          <Property Name="IsRecurring" Type="int" Nullable="false" />
-          <Property Name="Location" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="NoOfTickets" Type="int" Nullable="false" />
+          <Property Name="DateTime" Type="datetime" Nullable="false" />
+          <Property Name="Recurring" Type="int" Nullable="false" />
+          <Property Name="Venue" Type="nvarchar" MaxLength="255" Nullable="false" />
           <Property Name="Link" Type="nvarchar" MaxLength="255" />
           <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
           <Property Name="OrganizationID" Type="int" Nullable="false" />
-          <Property Name="IsDeleted" Type="int" Nullable="false" />
+          <Property Name="Deleted" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Organization">
           <Key>
@@ -62,13 +62,13 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Email" Type="nvarchar" MaxLength="255" Nullable="false" />
           <Property Name="Password" Type="nvarchar" MaxLength="255" Nullable="false" />
-          <Property Name="First_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
-          <Property Name="Last_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="FName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="LName" Type="nvarchar" MaxLength="255" Nullable="false" />
           <Property Name="Address" Type="nvarchar" MaxLength="255" Nullable="false" />
           <Property Name="Phone" Type="nvarchar" MaxLength="255" Nullable="false" />
           <Property Name="Gender" Type="nvarchar" MaxLength="255" Nullable="false" />
           <Property Name="DateOfBirth" Type="date" Nullable="false" />
-          <Property Name="IsDeleted" Type="int" Nullable="false" />
+          <Property Name="Deleted" Type="int" Nullable="false" />
         </EntityType>
         <Association Name="FK_Attendee_User">
           <End Role="User" Type="Self.User" Multiplicity="1" />
@@ -196,14 +196,14 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="TicketQuantity" Type="Int32" Nullable="false" />
-          <Property Name="ScheduledDateTime" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="IsRecurring" Type="Int32" Nullable="false" />
-          <Property Name="Location" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NoOfTickets" Type="Int32" Nullable="false" />
+          <Property Name="DateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Recurring" Type="Int32" Nullable="false" />
+          <Property Name="Venue" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="OrganizationID" Type="Int32" Nullable="false" />
-          <Property Name="IsDeleted" Type="Int32" Nullable="false" />
+          <Property Name="Deleted" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Organization" Relationship="Self.FK_Event_Organization" FromRole="Event" ToRole="Organization" />
           <NavigationProperty Name="Tickets" Relationship="Self.FK_Ticket_Event" FromRole="Event" ToRole="Ticket" />
         </EntityType>
@@ -246,13 +246,13 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="First_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Last_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Gender" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="IsDeleted" Type="Int32" Nullable="false" />
+          <Property Name="Deleted" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Attendees" Relationship="Self.FK_Attendee_User" FromRole="User" ToRole="Attendee" />
           <NavigationProperty Name="Organizations" Relationship="Self.FK_Organization_User" FromRole="User" ToRole="Organization" />
         </EntityType>
@@ -381,14 +381,14 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Type" ColumnName="Type" />
-                <ScalarProperty Name="TicketQuantity" ColumnName="TicketQuantity" />
-                <ScalarProperty Name="ScheduledDateTime" ColumnName="ScheduledDateTime" />
-                <ScalarProperty Name="IsRecurring" ColumnName="IsRecurring" />
-                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="NoOfTickets" ColumnName="NoOfTickets" />
+                <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+                <ScalarProperty Name="Recurring" ColumnName="Recurring" />
+                <ScalarProperty Name="Venue" ColumnName="Venue" />
                 <ScalarProperty Name="Link" ColumnName="Link" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
-                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -427,13 +427,13 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="First_Name" ColumnName="First_Name" />
-                <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+                <ScalarProperty Name="FName" ColumnName="FName" />
+                <ScalarProperty Name="LName" ColumnName="LName" />
                 <ScalarProperty Name="Address" ColumnName="Address" />
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="Gender" ColumnName="Gender" />
                 <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
-                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

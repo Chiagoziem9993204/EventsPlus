@@ -33,10 +33,10 @@ namespace EventPlus.Controllers
         [HttpPost]
         public ActionResult SignIn(UserViewModel userViewModel)
         {
-            if (userViewModel.Email == "admin" && userViewModel.Password == "admin")
+            if (userViewModel.Email == "Admin" && userViewModel.Password == "Administrator123")
             {
-                Session["UserType"] = "Admin";
-                Session["FirstName"] = "Admin";
+                Session["LoggedInUserType"] = "Admin";
+                Session["LoggedInUserFirstName"] = "Admin";
                 return RedirectToAction("AllEvents", "Event", new { area = "" });
             }
 
@@ -48,17 +48,17 @@ namespace EventPlus.Controllers
             {
                 if(user.Organizations.Count > 0)
                 {
-                    Session["UserType"] = "Organizer";
+                    Session["LoggedInUserType"] = "Organizer";
                     Organization organization = db.Organizations.SingleOrDefault(x => x.UserID == user.ID);
                     Session["OrganizationID"] = organization.ID.ToString();
                 } else
                 {
-                    Session["UserType"] = "Attendee";
+                    Session["LoggedInUserType"] = "Attendee";
                     Attendee attendee = db.Attendees.SingleOrDefault(x => x.UserID == user.ID);
                     Session["AttendeeID"] = attendee.ID.ToString();
 
                 }
-                Session["FirstName"] = user.First_Name;
+                Session["LoggedInUserFirstName"] = user.FName;
                 Session["ID"] = user.ID.ToString();
                 return RedirectToAction("AllEvents", "Event", new { area = "" });
             }
@@ -82,13 +82,13 @@ namespace EventPlus.Controllers
                 EventPlusEntities db = new EventPlusEntities();
                 User user = new User();
 
-                user.First_Name = userViewModel.First_Name;
-                user.Last_Name = userViewModel.Last_Name;
+                user.FName = userViewModel.FName;
+                user.LName = userViewModel.LName;
                 user.Email = userViewModel.Email;
                 user.Password = userViewModel.Password;
                 user.Address = userViewModel.Address;
                 user.Phone = userViewModel.Phone;
-                user.IsDeleted = 0;
+                user.Deleted = 0;
                 if(userViewModel.Gender == Gender.Female)
                 {
                     user.Gender = "Female";

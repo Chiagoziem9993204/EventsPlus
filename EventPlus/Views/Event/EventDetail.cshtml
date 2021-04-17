@@ -6,180 +6,203 @@
     ViewBag.Title = Model.Name;
 }
 
-    <section class="page-section background-grey" id="login">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 text-center bg-white px-lg-5">
-                    <br />
-                    <h2 class="section-heading text-uppercase">Event Detail</h2>
-                    <h3 class="section-subheading text-muted">Details about @Model.Name.</h3>
-                    <div class="px-lg-5">
+    <div class="container box">
+        <section class="about-us" id="about">
+            <div class="container w-60">
+                <div class="row">
+                    <div class="text-center mt-100 mb-100">
+                        <br />
+                        <h2 class="section-heading text-uppercase">Event Detail</h2>
+                        <h3 class="section-subheading text-muted">Details about @Model.Name.</h3>
+                        <div class="px-lg-5">
 
-                        @if (Model != null)
-                        {
-
-                            if (Session["UserType"] == "Admin" || Session["OrganizationID"]?.ToString() == Model.OrganizationID.ToString())
+                            @if (Model != null)
                             {
-                                using (Html.BeginForm("EventDetail", "Event", FormMethod.Post))
+
+                                if (Session["LoggedInUserType"] == "Admin" || Session["OrganizationID"]?.ToString() == Model.OrganizationID.ToString())
                                 {
-
-                                    @Html.HiddenFor(model => model.ID)
-
-                                    if (Session["UserType"] == "Admin")
+                                    using (Html.BeginForm("EventDetail", "Event", FormMethod.Post))
                                     {
-                                        <p class="text-left">Organization</p>
-                                        @Html.DropDownListFor(model => model.OrganizationID, ViewBag.OrganizationList as SelectList, "--Select Organization--", new { @class = "form-control form-group name-input", @placeholder = "Organization" })
-                                        @Html.ValidationMessageFor(model => model.OrganizationID, "", new { @class = "error", })
+
+                                        @Html.HiddenFor(model => model.ID)
+
+                                        if (Session["LoggedInUserType"] == "Admin")
+                                        {
+                                            <p class="text-left">Organization</p>
+                                            @Html.DropDownListFor(model => model.OrganizationID, ViewBag.OrganizationList as SelectList, "--Select Organization--", new { @class = "form-control form-group name-input", @placeholder = "Organization" })
+                                            @Html.ValidationMessageFor(model => model.OrganizationID, "", new { @class = "error", })
+                                            <br />
+                                        }
+
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="text-left">Name</p>
+                                                @Html.TextBoxFor(model => model.Name, new { @class = "form-control form-group name-input", @placeholder = "Name" })
+                                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "error", })
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="text-left">Type</p>
+                                                @Html.TextBoxFor(model => model.Type, new { @class = "form-control form-group name-input", @placeholder = "Type" })
+                                                @Html.ValidationMessageFor(model => model.Type, "", new { @class = "error", })
+                                            </div>
+                                        </div>
+
                                         <br />
+
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="text-left">Venue</p>
+                                                @Html.TextBoxFor(model => model.Venue, new { @class = "form-control form-group name-input", @placeholder = "Venue" })
+                                                @Html.ValidationMessageFor(model => model.Venue, "", new { @class = "error", })
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="text-left">Link</p>
+                                                @Html.TextBoxFor(model => model.Link, new { @class = "form-control form-group name-input", @placeholder = "Link" })
+                                                @Html.ValidationMessageFor(model => model.Link, "", new { @class = "error", })
+                                            </div>
+                                        </div>
+
+                                        <br />
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="text-left">Description</p>
+                                                @Html.TextBoxFor(model => model.Description, new { @class = "form-control form-group name-input", @placeholder = "Description" })
+                                                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "error", })
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="text-left">Scheduled Date & Time</p>
+                                                @Html.TextBoxFor(model => model.DateTime, new { @class = "form-control form-group name-input", @placeholder = "Date & Time", @type = "datetime-local", @value = Model.DateTime })
+                                                @Html.ValidationMessageFor(model => model.DateTime, "", new { @class = "error", })
+                                            </div>
+                                        </div>
+
+
+                                        <br />
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="text-left">Event Is Recurring</p>
+                                                @Html.DropDownListFor(model => model.Recurring, new SelectList(Enum.GetValues(typeof(Recurring))), "--Event Is Recurring--", new { @class = "form-control form-group name-input" })
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="text-left">No. of Tickets Available</p>
+                                                @Html.TextBoxFor(model => model.NoOfTickets, new { @class = "form-control form-group name-input", @placeholder = "No. of Tickets Available", @type = "number" })
+                                                @Html.ValidationMessageFor(model => model.NoOfTickets, "", new { @class = "error", })
+                                            </div>
+                                        </div>
+
+
+                                        <br />
+                                        <p class="text-left">Ticket Price</p>
+                                        @Html.TextBoxFor(model => model.TicketPrice, new { @class = "form-control form-group name-input", @placeholder = "Ticket Price", @type = "number" })
+                                        @Html.ValidationMessageFor(model => model.TicketPrice, "", new { @class = "error", })
+
+                                        <br />
+                                        <input type="submit" value="Update" class="btn btn-block btn-primary form-group login-button" />
+
                                     }
 
 
-                                    <p class="text-left">Name</p>
-                                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control form-group name-input", @placeholder = "Name" })
-                                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "error", })
-                                    <br />
-
-                                    <p class="text-left">Type</p>
-                                    @Html.TextBoxFor(model => model.Type, new { @class = "form-control form-group name-input", @placeholder = "Type" })
-                                    @Html.ValidationMessageFor(model => model.Type, "", new { @class = "error", })
-                                    <br />
-
-                                    <p class="text-left">Location</p>
-                                    @Html.TextBoxFor(model => model.Location, new { @class = "form-control form-group name-input", @placeholder = "Location" })
-                                    @Html.ValidationMessageFor(model => model.Location, "", new { @class = "error", })
-                                    <br />
-
-                                    <p class="text-left">Link</p>
-                                    @Html.TextBoxFor(model => model.Link, new { @class = "form-control form-group name-input", @placeholder = "Link" })
-                                    @Html.ValidationMessageFor(model => model.Link, "", new { @class = "error", })
-                                    <br />
-
-                                    <p class="text-left">Description</p>
-                                    @Html.TextBoxFor(model => model.Description, new { @class = "form-control form-group name-input", @placeholder = "Description" })
-                                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "error", })
-                                    <br />
-
-                                    <p class="text-left">Scheduled Date & Time</p>
-                                    @Html.TextBoxFor(model => model.ScheduledDateTime, new { @class = "form-control form-group name-input", @placeholder = "Date & Time", @type = "datetime-local", @value = Model.ScheduledDateTime })
-                                    @Html.ValidationMessageFor(model => model.ScheduledDateTime, "", new { @class = "error", })
+                                    @Html.ActionLink("Delete", "DeleteEvent", new { eventID = Model.ID }, new { @class = "btn btn-block btn-danger form-group login-button" })
 
                                     <br />
+                                }
+                                else
+                                {
+                                    <table class="table table-striped table-borderless">
 
-                                    <p class="text-left">Event Is Recurring</p>
-                                    @Html.DropDownListFor(model => model.IsRecurring, new SelectList(Enum.GetValues(typeof(IsRecurring))), "--Event Is Recurring--", new { @class = "form-control form-group name-input" });
+                                        <tr>
+                                            <td>
+                                                Name
+                                            </td>
+                                            <td>
+                                                @Model.Name
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Type
+                                            </td>
+                                            <td>
+                                                @Model.Type
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Scheduled Date & Time
+                                            </td>
+                                            <td>
+                                                @Model.DateTime
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Ticket Quantity
+                                            </td>
+                                            <td>
+                                                @Model.NoOfTickets
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Is Recurring
+                                            </td>
 
+                                            @if (@Model.GetEventRecurringValue(Model.Recurring) == 1)
+                                            {
+                                                <td>Yes</td>
+                                                ;
+                                            }
+                                            else
+                                            {
+                                                <td>No</td>
+                                            }
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Venue
+                                            </td>
+                                            <td>
+                                                @Model.Venue
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Link
+                                            </td>
+                                            <td>
+                                                @Model.Link
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Description
+                                            </td>
+                                            <td>
+                                                @Model.Description
+                                            </td>
+                                        </tr>
+
+                                    </table>
+
+                                    @Html.ActionLink("Buy Ticket", "PayForEvent", new { eventID = Model.ID }, new { @class = "btn btn-primary form-group login-button" })
                                     <br />
-                                    <p class="text-left">No. of Tickets Available</p>
-                                    @Html.TextBoxFor(model => model.TicketQuantity, new { @class = "form-control form-group name-input", @placeholder = "No. of Tickets Available", @type = "number" })
-                                    @Html.ValidationMessageFor(model => model.TicketQuantity, "", new { @class = "error", })
-
-                                    <br />
-                                    <p class="text-left">Ticket Price</p>
-                                    @Html.TextBoxFor(model => model.TicketPrice, new { @class = "form-control form-group name-input", @placeholder = "Ticket Price", @type = "number" })
-                                    @Html.ValidationMessageFor(model => model.TicketPrice, "", new { @class = "error", })
-
-                                    <br />
-                                    <input type="submit" value="Update" class="btn btn-block btn-primary form-group login-button" />
-
                                 }
 
 
-                                @Html.ActionLink("Delete", "DeleteEvent", new { eventID = Model.ID }, new { @class = "btn btn-block btn-danger form-group login-button" })
 
-                                <br />
-                            }
-                            else
-                            {
-                                <table class="table table-striped table-borderless">
 
-                                    <tr>
-                                        <td>
-                                            Name
-                                        </td>
-                                        <td>
-                                            @Model.Name
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Type
-                                        </td>
-                                        <td>
-                                            @Model.Type
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Scheduled Date & Time
-                                        </td>
-                                        <td>
-                                            @Model.ScheduledDateTime
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Ticket Quantity
-                                        </td>
-                                        <td>
-                                            @Model.TicketQuantity
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Is Recurring
-                                        </td>
 
-                                        @if (@Model.GetEventRecurringValue(Model.IsRecurring) == 1)
-                                        {
-                                            <td>Yes</td>
-                                            ;
-                                        }
-                                        else
-                                        {
-                                            <td>No</td>
-                                        }
-
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Location
-                                        </td>
-                                        <td>
-                                            @Model.Location
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Link
-                                        </td>
-                                        <td>
-                                            @Model.Link
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Description
-                                        </td>
-                                        <td>
-                                            @Model.Description
-                                        </td>
-                                    </tr>
-
-                                </table>
-
-                                @Html.ActionLink("Buy Ticket", "PayForEvent", new { eventID = Model.ID }, new { @class = "btn btn-primary form-group login-button" })
-                                <br />
                             }
 
-
-
-
-
-                        }
+                        </div>
 
                     </div>
-
                 </div>
             </div>
+        </section>
         </div>
-    </section>

@@ -24,13 +24,13 @@ namespace EventPlus.Models
         public int ID { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public string First_Name { get; set; }
-        public string Last_Name { get; set; }
+        public string FName { get; set; }
+        public string LName { get; set; }
         public string Address { get; set; }
         public string Phone { get; set; }
         public string Gender { get; set; }
         public System.DateTime DateOfBirth { get; set; }
-        public int IsDeleted { get; set; }
+        public int Deleted { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Attendee> Attendees { get; set; }

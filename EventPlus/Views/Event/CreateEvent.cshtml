@@ -5,58 +5,79 @@
     ViewBag.Title = "Create Event";
 }
 
-    <section class="page-section background-grey" id="login">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center bg-white px-lg-5">
-                    <h2 class="text-black-50 mt-5">Create Event</h2>
-                    <hr class="divider my-4" />
-                    @using (Html.BeginForm("CreateEvent", "Event", FormMethod.Post))
-                    {
-
-                        if (Session["UserType"] == "Admin")
+    <div class="container box">
+        <section class="about-us" id="about">
+            <div class="container w-60">
+                <div class="">
+                    <div class="text-center mt-100">
+                        <h2 class="text-black-50 mt-5">Create Event</h2>
+                        <hr class="divider my-4" />
+                        @using (Html.BeginForm("CreateEvent", "Event", FormMethod.Post))
                         {
-                            @Html.DropDownListFor(model => model.OrganizationID, ViewBag.OrganizationList as SelectList, "--Select Organization--", new { @class = "form-control form-group name-input", @placeholder = "Organization" })
-                            @Html.ValidationMessageFor(model => model.OrganizationID, "", new { @class = "error", })
+
+                            if (Session["LoggedInUserType"] == "Admin")
+                            {
+                                @Html.DropDownListFor(model => model.OrganizationID, ViewBag.OrganizationList as SelectList, "--Select Organization--", new { @class = "form-control form-group name-input", @placeholder = "Organization" })
+                                @Html.ValidationMessageFor(model => model.OrganizationID, "", new { @class = "error", })
+                            }
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control form-group name-input", @placeholder = "Name" })
+                                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "error", })
+                                </div>
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.Type, new { @class = "form-control form-group name-input", @placeholder = "Type" })
+                                    @Html.ValidationMessageFor(model => model.Type, "", new { @class = "error", })
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.Venue, new { @class = "form-control form-group name-input", @placeholder = "Venue" })
+                                    @Html.ValidationMessageFor(model => model.Venue, "", new { @class = "error", })
+                                </div>
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.Link, new { @class = "form-control form-group name-input", @placeholder = "Link" })
+                                    @Html.ValidationMessageFor(model => model.Link, "", new { @class = "error", })
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.Description, new { @class = "form-control form-group name-input", @placeholder = "Description" })
+                                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "error", })
+                                </div>
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.DateTime, new { @class = "form-control form-group name-input", @placeholder = "Date & Time", @type = "datetime-local" })
+                                    @Html.ValidationMessageFor(model => model.DateTime, "", new { @class = "error", })
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    @Html.DropDownListFor(model => model.Recurring, new SelectList(Enum.GetValues(typeof(Recurring))), "--Event Is Recurring--", new { @class = "form-control form-group name-input" });
+
+                                </div>
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.NoOfTickets, new { @class = "form-control form-group name-input", @placeholder = "No. of Tickets Available", @type = "number" })
+                                    @Html.ValidationMessageFor(model => model.NoOfTickets, "", new { @class = "error", })
+                                </div>
+                            </div>
+
+
+                            @Html.TextBoxFor(model => model.TicketPrice, new { @class = "form-control form-group name-input", @placeholder = "Ticket Price", @type = "number" })
+                            @Html.ValidationMessageFor(model => model.TicketPrice, "", new { @class = "error", })
+
+                            <input type="submit" value="Create" class="btn btn-primary form-group login-button" />
+
                         }
+                        <br />
+                        <br />
 
-
-
-                        @Html.TextBoxFor(model => model.Name, new { @class = "form-control form-group name-input", @placeholder = "Name" })
-                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "error", })
-
-                        @Html.TextBoxFor(model => model.Type, new { @class = "form-control form-group name-input", @placeholder = "Type" })
-                        @Html.ValidationMessageFor(model => model.Type, "", new { @class = "error", })
-
-
-                        @Html.TextBoxFor(model => model.Location, new { @class = "form-control form-group name-input", @placeholder = "Location" })
-                        @Html.ValidationMessageFor(model => model.Location, "", new { @class = "error", })
-
-                        @Html.TextBoxFor(model => model.Link, new { @class = "form-control form-group name-input", @placeholder = "Link" })
-                        @Html.ValidationMessageFor(model => model.Link, "", new { @class = "error", })
-
-                        @Html.TextBoxFor(model => model.Description, new { @class = "form-control form-group name-input", @placeholder = "Description" })
-                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "error", })
-
-                        @Html.TextBoxFor(model => model.ScheduledDateTime, new { @class = "form-control form-group name-input", @placeholder = "Date & Time", @type = "datetime-local" })
-                        @Html.ValidationMessageFor(model => model.ScheduledDateTime, "", new { @class = "error", })
-
-                        @Html.DropDownListFor(model => model.IsRecurring, new SelectList(Enum.GetValues(typeof(IsRecurring))), "--Event Is Recurring--", new { @class = "form-control form-group name-input" });
-
-
-                        @Html.TextBoxFor(model => model.TicketQuantity, new { @class = "form-control form-group name-input", @placeholder = "No. of Tickets Available", @type = "number" })
-                        @Html.ValidationMessageFor(model => model.TicketQuantity, "", new { @class = "error", })
-
-                        @Html.TextBoxFor(model => model.TicketPrice, new { @class = "form-control form-group name-input", @placeholder = "Ticket Price", @type = "number" })
-                        @Html.ValidationMessageFor(model => model.TicketPrice, "", new { @class = "error", })
-
-                        <input type="submit" value="Create" class="btn btn-primary form-group login-button" />
-
-                    }
-                    <br />
-                    <br />
-
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+</div>

@@ -23,14 +23,14 @@ namespace EventPlus.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }
-        public int TicketQuantity { get; set; }
-        public System.DateTime ScheduledDateTime { get; set; }
-        public int IsRecurring { get; set; }
-        public string Location { get; set; }
+        public int NoOfTickets { get; set; }
+        public System.DateTime DateTime { get; set; }
+        public int Recurring { get; set; }
+        public string Venue { get; set; }
         public string Link { get; set; }
         public string Description { get; set; }
         public int OrganizationID { get; set; }
-        public int IsDeleted { get; set; }
+        public int Deleted { get; set; }
     
         public virtual Organization Organization { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

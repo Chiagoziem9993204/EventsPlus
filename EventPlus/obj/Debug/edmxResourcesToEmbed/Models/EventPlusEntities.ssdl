@@ -15,14 +15,14 @@
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="Type" Type="nvarchar" MaxLength="255" Nullable="false" />
-    <Property Name="TicketQuantity" Type="int" Nullable="false" />
-    <Property Name="ScheduledDateTime" Type="datetime" Nullable="false" />
-    <Property Name="IsRecurring" Type="int" Nullable="false" />
-    <Property Name="Location" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="NoOfTickets" Type="int" Nullable="false" />
+    <Property Name="DateTime" Type="datetime" Nullable="false" />
+    <Property Name="Recurring" Type="int" Nullable="false" />
+    <Property Name="Venue" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="Link" Type="nvarchar" MaxLength="255" />
     <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
     <Property Name="OrganizationID" Type="int" Nullable="false" />
-    <Property Name="IsDeleted" Type="int" Nullable="false" />
+    <Property Name="Deleted" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Organization">
     <Key>
@@ -57,13 +57,13 @@
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Email" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="Password" Type="nvarchar" MaxLength="255" Nullable="false" />
-    <Property Name="First_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
-    <Property Name="Last_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="FName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="LName" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="Address" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="Phone" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="Gender" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="DateOfBirth" Type="date" Nullable="false" />
-    <Property Name="IsDeleted" Type="int" Nullable="false" />
+    <Property Name="Deleted" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="FK_Attendee_User">
     <End Role="User" Type="Self.User" Multiplicity="1" />

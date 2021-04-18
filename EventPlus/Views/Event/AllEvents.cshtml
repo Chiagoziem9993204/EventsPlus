@@ -1,4 +1,5 @@
-﻿@model IEnumerable<EventPlus.Models.EventViewModel>
+﻿@model PagedList.IPagedList<EventPlus.Models.EventViewModel>
+@using PagedList.Mvc;
 @{
     ViewBag.Title = "All Events";
 }
@@ -90,6 +91,14 @@
                 <li class="clearfix no-float"></li>
             }
         </ul>
+
+        <br />
+        <br />
+        <div class="text-center">
+            @Html.PagedListPager(Model, page => Url.Action("AllEvents", new { page, pageSize = Model.PageSize }))
+            Showing @Model.FirstItemOnPage to @Model.LastItemOnPage of @Model.TotalItemCount Events
+        </div>
+
 
     </section>
 </div>

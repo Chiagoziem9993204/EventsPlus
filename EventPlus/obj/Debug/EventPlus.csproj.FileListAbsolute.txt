@@ -336,3 +336,7 @@ C:/Users/user/Desktop/MVC/EventPlus - Winner/EventPlus/obj/Debug/EventPlus.pdb
 /Users/Jabguru/Desktop/Working/EventsPlus/EventPlus/obj/Debug/EventPlus.csproj.CopyComplete
 /Users/Jabguru/Desktop/Working/EventsPlus/EventPlus/obj/Debug/EventPlus.dll
 /Users/Jabguru/Desktop/Working/EventsPlus/EventPlus/obj/Debug/EventPlus.pdb
+/Users/Jabguru/Desktop/Working/EventsPlus/EventPlus/bin/PagedList.dll
+/Users/Jabguru/Desktop/Working/EventsPlus/EventPlus/bin/PagedList.Mvc.dll
+/Users/Jabguru/Desktop/Working/EventsPlus/EventPlus/bin/PagedList.xml
+/Users/Jabguru/Desktop/Working/EventsPlus/EventPlus/bin/PagedList.Mvc.xml

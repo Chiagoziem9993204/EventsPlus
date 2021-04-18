@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PagedList;
 
 namespace EventPlus.Controllers
 {
@@ -83,14 +84,16 @@ namespace EventPlus.Controllers
 
         // ACTION FOR ALL EVENTS
         // GETS ALL THE EVENTS FROM THE DATABASE
-        // EVENTS ARE DESERIALIZED USING THE EVENTVIEWMODEL AND SENT TO THE VIEW
-        public ActionResult AllEvents()
+        // EVENTS ARE DESERIALIZED USING THE EVENTVIEWMODEL
+        // PAGINATE RESULSTS AND SEND TO THE VIEW
+        public ActionResult AllEvents(int page = 1, int pageSize = 2)
         {
             EventPlusEntities db = new EventPlusEntities();
             List<Event> eventsList = db.Events.ToList();
             EventViewModel eventViewModel = new EventViewModel();
             List<EventViewModel> eventViewModelsList = eventsList.Where(x=>x.Deleted==0).Select(x => new EventViewModel { ID = x.ID, Name = x.Name, Type = x.Type, NoOfTickets = x.NoOfTickets, DateTime = x.DateTime, Recurring = eventViewModel.SetEventRecurringValue(x.Recurring), Venue = x.Venue, Link = x.Link, Description = x.Description, OrganizationID = x.OrganizationID }).ToList();
-            return View(eventViewModelsList);
+            PagedList<EventViewModel> model = new PagedList<EventViewModel>(eventViewModelsList, page, pageSize);
+            return View(model);
         }
 
 

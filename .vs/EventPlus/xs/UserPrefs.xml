@@ -1,16 +1,33 @@
 ﻿<Properties StartupConfiguration="{03637654-8965-4847-92DC-DFB3665DB3B6}|">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="EventPlus/Controllers/UserController.cs">
+    <Files>
+      <File FileName="EventPlus/Controllers/EventController.cs" Line="95" Column="12" />
+      <File FileName="EventPlus/Controllers/UserController.cs" Line="33" Column="67" />
+      <File FileName="EventPlus/Views/Event/AllEvents.cshtml" Line="100" Column="15" />
+      <File FileName="EventPlus/Views/User/AllUsers.cshtml" Line="12" Column="23" />
+      <File FileName="EventPlus/Views/User/CreateUser.cshtml" Line="3" Column="8" />
+      <File FileName="EventPlus/Views/Shared/_Layout.cshtml" Line="18" Column="40" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EventPlus" expanded="True">
             <Node name="EventPlus" expanded="True">
-              <Node name="Images" expanded="True">
-                <Node name="img13.jpg" selected="True" />
+              <Node name="Content" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="UserController.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Event" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="User" expanded="True" />
               </Node>
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

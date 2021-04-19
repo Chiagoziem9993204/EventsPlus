@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{03637654-8965-4847-92DC-DFB3665DB3B6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EventPlus/Controllers/UserController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EventPlus/Scripts/js/main.js">
     <Files>
-      <File FileName="EventPlus/Controllers/EventController.cs" Line="95" Column="12" />
-      <File FileName="EventPlus/Controllers/UserController.cs" Line="33" Column="67" />
+      <File FileName="EventPlus/Controllers/EventController.cs" Line="89" Column="39" />
+      <File FileName="EventPlus/Controllers/UserController.cs" />
       <File FileName="EventPlus/Views/Event/AllEvents.cshtml" Line="100" Column="15" />
-      <File FileName="EventPlus/Views/User/AllUsers.cshtml" Line="12" Column="23" />
-      <File FileName="EventPlus/Views/User/CreateUser.cshtml" Line="3" Column="8" />
-      <File FileName="EventPlus/Views/Shared/_Layout.cshtml" Line="18" Column="40" />
+      <File FileName="EventPlus/Views/User/AllUsers.cshtml" />
+      <File FileName="EventPlus/Views/User/CreateUser.cshtml" />
+      <File FileName="EventPlus/Views/Shared/_Layout.cshtml" Line="110" Column="34" />
+      <File FileName="EventPlus/Scripts/js/main.js" Line="12" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,8 +15,11 @@
           <Node name="EventPlus" expanded="True">
             <Node name="EventPlus" expanded="True">
               <Node name="Content" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="UserController.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="js" expanded="True">
+                  <Node name="main.js" selected="True" />
+                </Node>
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="Event" expanded="True" />
@@ -25,9 +29,6 @@
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

@@ -9,7 +9,7 @@
 
         // Launch Functions
         Launch: function () {
-            fn.GoogleMaps();
+            //fn.GoogleMaps();
             fn.MenuSticky();
             fn.MainSlider();
             fn.MainSliderAlign();
@@ -22,6 +22,7 @@
 
 
         // Google Maps
+
         GoogleMaps: function () {
 
             var markerInfo = "<h4>" + venueAddress + "</h4>";

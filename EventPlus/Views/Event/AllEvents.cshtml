@@ -98,7 +98,5 @@
             @Html.PagedListPager(Model, page => Url.Action("AllEvents", new { page, pageSize = Model.PageSize }))
             Showing @Model.FirstItemOnPage to @Model.LastItemOnPage of @Model.TotalItemCount Events
         </div>
-
-
     </section>
 </div>

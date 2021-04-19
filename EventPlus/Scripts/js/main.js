@@ -60,6 +60,7 @@
 
 
         // Sticky Menu
+
         MenuSticky: function () {
             var menu = document.querySelector('#menu'),
                 origOffsetY = menu.offsetTop + 100;
@@ -78,6 +79,7 @@
 
 
         // Align Slider Horizontally
+
         MainSliderAlign: function () {
             var imageWidth, widthFix, container = $('.header-bg');
             function centerImage() {
@@ -91,6 +93,7 @@
 
 
         // Main FlexSlider
+
         MainSlider: function () {
             $(window).load(function () {
                 $('.main-slider').flexslider({

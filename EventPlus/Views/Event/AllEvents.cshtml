@@ -7,7 +7,7 @@
     <section id="schedule" class="row mb-100">
         <div class="title-start schedule-menu col-md-4 col-md-offset-4 mt-100 mb-100">
             <br />
-            @if (Session["LoggedInUserType"] == "Organizer")
+            @*@if (Session["LoggedInUserType"] == "Organizer")
             {
                 <h2 class="text-black-50 mt-5">
                     My Events
@@ -18,15 +18,28 @@
                 <h2 class="text-black-50 mt-5">
                     Events
                 </h2>
-            }
+            }*@
+
+            <h2 class="text-black-50 mt-5">
+                My Events
+            </h2>
 
             <p class="sub-text text-center">Check out the event details</p>
             <hr class="divider my-4" />
             @if (Session["LoggedInUserType"] != null && Session["LoggedInUserType"] != "Attendee")
             {
-                <div class="text-center">
-                    <a class="btn btn-primary" href="CreateEvent">Add Event</a>
-                </div>
+        <div class="text-center">
+            <a class="btn btn-primary" href="CreateEvent">Add Event</a>
+            <br />
+            <br />
+            @using (Html.BeginForm())
+            {
+                <p>
+                    Find by name: @Html.TextBox("SearchString")
+                    <input type="submit" value="Search" />
+                </p>
+            }
+        </div>
             }
         </div>
         <ul class="timeline">

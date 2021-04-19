@@ -60,8 +60,12 @@
                                 <li><a href="/Home#contact">Contact</a></li>
                                 @if (Session["LoggedInUserType"] != null)
                                 {
-                                    <li>
+                                    @*<li>
                                         @Html.ActionLink(Session["LoggedInUserType"] == "Organizer" ? "My Events" : "Events", "AllEvents", "Event", new { area = "" }, new { @class = "" })
+                                    </li>*@
+
+                                    <li>
+                                        @Html.ActionLink("Events", "AllEvents", "Event", new { area = "" }, new { @class = "" })
                                     </li>
 
                                     if (Session["LoggedInUserType"] == "Admin")

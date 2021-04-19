@@ -84,12 +84,19 @@ namespace EventPlus.Controllers
 
         // ACTION FOR ALL EVENTS
         // GETS ALL THE EVENTS FROM THE DATABASE
+        // CHECKS IF ANY EVENT IS SEARCHED BY NAME, DESCRIPTION, VENUE
         // EVENTS ARE DESERIALIZED USING THE EVENTVIEWMODEL
         // PAGINATE RESULSTS AND SEND TO THE VIEW
-        public ActionResult AllEvents(int page = 1, int pageSize = 2)
+        public ActionResult AllEvents(string searchString, int page = 1, int pageSize = 2)
         {
             EventPlusEntities db = new EventPlusEntities();
             List<Event> eventsList = db.Events.ToList();
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                eventsList = eventsList.Where(s => s.Name.Contains(searchString)
+                                       || s.Description.Contains(searchString)
+                                       || s.Venue.Contains(searchString)).ToList();
+            }
             EventViewModel eventViewModel = new EventViewModel();
             List<EventViewModel> eventViewModelsList = eventsList.Where(x=>x.Deleted==0).Select(x => new EventViewModel { ID = x.ID, Name = x.Name, Type = x.Type, NoOfTickets = x.NoOfTickets, DateTime = x.DateTime, Recurring = eventViewModel.SetEventRecurringValue(x.Recurring), Venue = x.Venue, Link = x.Link, Description = x.Description, OrganizationID = x.OrganizationID }).ToList();
             PagedList<EventViewModel> model = new PagedList<EventViewModel>(eventViewModelsList, page, pageSize);

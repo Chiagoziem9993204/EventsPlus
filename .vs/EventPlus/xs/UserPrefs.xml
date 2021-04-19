@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{03637654-8965-4847-92DC-DFB3665DB3B6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EventPlus/Controllers/EventController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EventPlus/Views/Event/AllEvents.cshtml">
     <Files>
-      <File FileName="EventPlus/Controllers/EventController.cs" Line="96" Column="58" />
-      <File FileName="EventPlus/Views/Event/AllEvents.cshtml" Line="37" Column="55" />
+      <File FileName="EventPlus/Controllers/EventController.cs" Line="104" Column="10" />
+      <File FileName="EventPlus/Views/Event/AllEvents.cshtml" Line="39" Column="41" />
+      <File FileName="EventPlus/Models/EventViewModel.cs" Line="1" Column="1" />
       <File FileName="EventPlus/Controllers/UserController.cs" Line="7" Column="1" />
       <File FileName="EventPlus/Views/User/AllUsers.cshtml" />
       <File FileName="EventPlus/Views/User/CreateUser.cshtml" />
       <File FileName="EventPlus/Views/Shared/_Layout.cshtml" Line="68" Column="58" />
-      <File FileName="EventPlus/Models/EventViewModel.cs" Line="1" Column="1" />
+      <File FileName="EventPlus/Views/Event/CreateEvent.cshtml" Line="73" Column="112" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,10 +16,13 @@
           <Node name="EventPlus" expanded="True">
             <Node name="EventPlus" expanded="True">
               <Node name="Content" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="EventController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Event" expanded="True">
+                  <Node name="AllEvents.cshtml" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>

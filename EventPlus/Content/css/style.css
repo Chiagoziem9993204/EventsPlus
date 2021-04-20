@@ -1500,3 +1500,7 @@ font-weight: bold;
 .mb-100{
     margin-bottom: 100px;
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -149,6 +149,7 @@
 
 
         // FlexSlider
+
         Slider: function () {
             $('.flexslider').flexslider({
                 noCSS: true,
@@ -187,6 +188,7 @@
             $(".video").fitVids();
 
             // Fancy Select
+
             $('#ticket').fancySelect();
 
         }

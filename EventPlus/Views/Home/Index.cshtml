@@ -128,7 +128,7 @@
 <!-- testimonial -->
 
 <div class="content mcontent">
-    <div id="gotop" class="gotop fa fa-arrow-up"></div>
+    <div id="gotophere" class="gotop fa fa-arrow-up"></div>
 </div>
 
 <!-- Contact Area -->
@@ -189,3 +189,11 @@
     </div><!-- social -->
 </section>
 <!-- contact -->
+
+<script>
+    var goToTopBtn = document.getElementById("gotophere");
+    var bodyHeader = document.getElementById("header");
+    goToTopBtn.addEventListener("click", function () {
+        bodyHeader.scrollIntoView();
+    });
+</script>

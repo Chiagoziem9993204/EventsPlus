@@ -1,14 +1,27 @@
 ﻿<Properties StartupConfiguration="{03637654-8965-4847-92DC-DFB3665DB3B6}|">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="EventPlus/Scripts/js/main.js">
+    <Files>
+      <File FileName="EventPlus/Content/css/style.css" Line="1506" Column="2" />
+      <File FileName="EventPlus/Views/Shared/_Layout.cshtml" Line="57" Column="76" />
+      <File FileName="EventPlus/Views/Home/Index.cshtml" Line="131" Column="19" />
+      <File FileName="EventPlus/Scripts/js/main.js" Line="171" Column="17" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EventPlus" expanded="True">
             <Node name="EventPlus" expanded="True">
+              <Node name="Content" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
               <Node name="Scripts" expanded="True">
                 <Node name="js" expanded="True">
                   <Node name="main.js" selected="True" />
                 </Node>
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
               </Node>
             </Node>
           </Node>
